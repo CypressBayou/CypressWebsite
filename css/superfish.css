@@ -40,20 +40,20 @@ nav {
 	font: bold 14px/14px 'Open Sans', sans-serif;
 	color:#fff;
 	text-decoration:none;
-	border-top: 3px solid #eada51;
+	border-top: 3px solid #0f6936;
 	background: url('../images/arr_1.png') 50% 0 no-repeat;
 }
 .sf-menu ul {
 	position: absolute;
 	top: -999em;
 	padding: 32px 0 23px;
-	background: #eada51;
+	background: #0f6936;
 	width: 257px;
 }
 .sf-menu ul ul {
 	position: absolute;
 	top: -999em;
-	background: #eada51;
+	background: #0f6936;
 }
 .sf-menu ul li {
 	width: 205px;

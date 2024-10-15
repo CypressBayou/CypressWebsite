@@ -12,7 +12,7 @@
 @import url(//fonts.googleapis.com/css?family=Orbitron:700);
 @import url(//fonts.googleapis.com/css?family=PT+Sans);
 body{
-	background: #eada51;
+	background: #0400ff;
 	font: 12px/19px 'Open Sans', sans-serif;
 	letter-spacing: 1px;
 	color: #7e7e7e;
@@ -191,7 +191,7 @@ header {
 /************End Header************/
 .button1 {
 	font: 9px/9px 'Open Sans', sans-serif;
-    background: #eada51;
+    background: #0400ff;
     color: #1f1f1f;
     display: inline-block;
     padding: 11px 24px;
@@ -253,7 +253,7 @@ hr {
 	font: 700 31px/42px 'Orbitron', sans-serif;
 	text-align: center;
 	color: #4c4b4b;
-	border-bottom: 3px solid #eada51;
+	border-bottom: 3px solid #0400ff;
 	margin-bottom: 44px;
 }
 .block_1 .block_num p{
@@ -327,7 +327,7 @@ hr {
 	font: 700 31px/42px 'Orbitron', sans-serif;
 	text-align: center;
 	color: #4c4b4b;
-	border-bottom: 3px solid #eada51;
+	border-bottom: 3px solid #0400ff;
 	margin-bottom: 31px;
 	margin-top: -11px;
 }
@@ -358,7 +358,7 @@ hr {
 	text-decoration: none;
 }
 .link_1:hover{
-	color: #eada51;
+	color: #0400ff;
 }
 .link_2{
 	color: #fff;
@@ -372,7 +372,7 @@ hr {
 	text-decoration: none;
 }
 .link_3:hover{
-	color: #eada51;
+	color: #0400ff;
 }
 
 		/************Page-2***********/
@@ -418,7 +418,7 @@ hr {
 	font: 700 31px/42px 'Orbitron', sans-serif;
 	text-align: center;
 	color: #4c4b4b;
-	border-bottom: 3px solid #eada51;
+	border-bottom: 3px solid #0400ff;
 	margin: -6px 20px 0 0;
 }
 .list_1 .txt_info{
@@ -517,7 +517,7 @@ hr {
 	font: 700 31px/42px 'Orbitron', sans-serif;
 	color: #4c4b4b;
 	margin-bottom: 5px;
-	border-bottom: 3px solid #eada51;
+	border-bottom: 3px solid #0400ff;
 }
 
 .list-blog .text-info1{
@@ -580,7 +580,7 @@ hr {
 	transition: all 0.5s ease;
 }
 .list_2 a:hover{
-	color: #eada51;
+	color: #0400ff;
 	text-decoration: none;
 }
 		/************End Page-4***********/

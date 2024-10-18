@@ -351,6 +351,34 @@
     </div>
 </section>
 
+<!-- Add JavaScript to shuffle the logos before the closing body tag -->
+<script>
+    // Function to shuffle an array (Fisher-Yates algorithm)
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // Function to shuffle logos
+    function shuffleLogos() {
+        const carousel = document.getElementById('logoCarousel');
+        const logos = Array.from(carousel.children);  // Get all logo <img> elements
+
+        // Shuffle the logos array
+        const shuffledLogos = shuffleArray(logos);
+
+        // Clear the carousel and append logos in shuffled order
+        carousel.innerHTML = '';
+        shuffledLogos.forEach(logo => carousel.appendChild(logo));
+    }
+
+    // Shuffle logos when the page loads
+    window.onload = shuffleLogos;
+</script>
+
 <!--=======footer=================================-->
 <footer>
     <div class="container_12">

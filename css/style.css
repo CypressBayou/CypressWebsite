@@ -1,7 +1,7 @@
 /*css*/
 @import "../css/reset.css";
 @import "../css/skeleton.css";
-@import"../css/superfish.css";
+@import "../css/superfish.css";
 @import "../css/camera-slider.css";
 @import "../css/ui.totop.css";
 @import "../css/subscribe-form.css";
@@ -905,4 +905,51 @@ footer .width_2{
 }
 @media only screen and (max-width: 320px) {
 
+}
+
+/************ Custom Logo Carousel Styles ************/
+.carousel-wrapper {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	background-color: #fff; /* Change this color to customize the carousel background */
+}
+.carousel-container {
+	width: 100%;
+	overflow: hidden;
+	background-color: #f5f5f5;
+}
+.carousel {
+	display: flex;
+	align-items: center;
+	animation: scroll 20s linear infinite;
+}
+.carousel img {
+	width: 125px;
+	height: 125px;
+	object-fit: contain;
+	margin: 0 20px;
+}
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+@media only screen and (max-width: 767px) {
+	.carousel img {
+		width: 100px;
+		height: 100px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.carousel img {
+		width: 80px;
+		height: 80px;
+	}
 }

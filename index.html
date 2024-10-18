@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-     <title>Home</title>
-     <meta charset="utf-8">
-     <meta name = "format-detection" content = "telephone=no" />
-     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-     <script src="js/jquery.js"></script>
-     <script src="js/jquery-migrate-1.1.1.js"></script>
-     <script src="js/jquery.easing.1.3.js"></script>
-	 <script src="js/script.js"></script>
-     <script src="js/superfish.js"></script>
-     <script src="js/jquery.mobilemenu.js"></script>
-     <script src="js/jquery.animate-colors-min.js"></script>
-     <script src="js/camera.js"></script>
-     <script src="js/jquery.ui.totop.js"></script>
-     <script src="js/sForm.js"></script>
-     <!--[if (gt IE 9)|!(IE)]><!-->
-         <script src="js/jquery.mobile.customized.min.js"></script>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script src="js/jquery.animate-colors-min.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/sForm.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+        <script src="js/jquery.mobile.customized.min.js"></script>
     <!--<![endif]--> 
-     <!-- font-awesome font -->
+    <!-- font-awesome font -->
     <link rel="stylesheet" href="fonts/font-awesome.css" type="text/css" media="screen">
     <!-- end font-awesome font -->
-      <script>
+    <script>
         jQuery
         $(window).load(function(){
             jQuery('#camera').camera({
-
                 loader: true,
                 pagination: false,
                 thumbnails: false,
@@ -37,31 +36,27 @@
                 navigation: false,
                 fx: 'simpleFade',
                 autoAdvance: true
-
             });
 
-            $('.block_1 .button1').hover(function()
-                {
-                    $(this).parent().find('.block_num').animate({'color':'#fff'});
-                    $(this).parent().find('h5').animate({'color':'#eada51'});
-                    $(this).parent().find('p').animate({'color':'#fff'});          
-                }, function(){
-                    $(this).parent().find('.block_num').animate({'color':'#4c4b4b'});
-                    $(this).parent().find('h5').animate({'color':'#fff'});
-                    $(this).parent().find('p').animate({'color':'#4c4b4b'});
-                });
+            $('.block_1 .button1').hover(function(){
+                $(this).parent().find('.block_num').animate({'color':'#fff'});
+                $(this).parent().find('h5').animate({'color':'#eada51'});
+                $(this).parent().find('p').animate({'color':'#fff'});          
+            }, function(){
+                $(this).parent().find('.block_num').animate({'color':'#4c4b4b'});
+                $(this).parent().find('h5').animate({'color':'#fff'});
+                $(this).parent().find('p').animate({'color':'#4c4b4b'});
+            });
 
-             $('.block_3 .button1').hover(function()
-                {
-                    $(this).parent().find('.block_letter').animate({'color':'#fff'});
-                    $(this).parent().parent().find('.icon').animate({'backgroundColor':'#eada51'});
-                    $(this).parent().parent().find('.icon div').animate({'color':'#fff'});          
-                }, function(){
-                    $(this).parent().find('.block_letter').animate({'color':'#4c4b4b'});
-                    $(this).parent().parent().find('.icon').animate({'backgroundColor':'#1f1f1f'});
-                    $(this).parent().parent().find('.icon div').animate({'color':'#4c4b4b'});
-                })
-
+            $('.block_3 .button1').hover(function(){
+                $(this).parent().find('.block_letter').animate({'color':'#fff'});
+                $(this).parent().parent().find('.icon').animate({'backgroundColor':'#eada51'});
+                $(this).parent().parent().find('.icon div').animate({'color':'#fff'});          
+            }, function(){
+                $(this).parent().find('.block_letter').animate({'color':'#4c4b4b'});
+                $(this).parent().parent().find('.icon').animate({'backgroundColor':'#1f1f1f'});
+                $(this).parent().parent().find('.icon div').animate({'color':'#4c4b4b'});
+            });
         });     
         jQuery(function(){
             $().UItoTop({ easingType: 'easeOutQuart' });
@@ -70,35 +65,60 @@
             });
         });     
     </script>
-     <!--<![endif]-->
-     <!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-         </a>
-      </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-   		<script src="js/html5shiv.js"></script>
-    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-    <![endif]-->
-     </head>
-     <body>
+
+    <!-- Custom styles for the logo carousel -->
+    <style>
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f5f5f5;
+        }
+
+        .carousel {
+            display: flex;
+            align-items: center;
+            animation: scroll 20s linear infinite;
+        }
+
+        .carousel img {
+            width: 125px;
+            height: 125px;
+            object-fit: contain;
+            margin: 0 20px;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
 <!--==============================header=================================-->
 <header>
     <div class="slider_box">
         <div class="camera_wrap camera_azure_skin" id="camera">        
             <div data-src="images/gall_pic1.jpg">
-                <div class="camera_caption fadeIn">
-                </div>
+                <div class="camera_caption fadeIn"></div>
             </div>
             <div data-src="images/gall_pic2.jpg">
-                <div class="camera_caption fadeIn">
-                </div>
+                <div class="camera_caption fadeIn"></div>
             </div>
             <div data-src="images/gall_pic3.jpg">
-                <div class="camera_caption fadeIn">
-                </div>
+                <div class="camera_caption fadeIn"></div>
             </div>            
         </div>
         <div class="logoHolder">
@@ -144,6 +164,7 @@
         </div>
     </div>
 </header>
+
 <!--=======content================================-->
 <section id="content">
     <div class="container_12">
@@ -152,9 +173,9 @@
                 <div class="block_num">
                     <p>01</p>
                 </div>
-                <h4>innovations</h4>
+                <h4>Innovations</h4>
                 <h5>Lorem ipsum dolor<br> sit amet cons</h5>
-                <p>Praesent vestibum molestie lacus. <br>Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi. </p>
+                <p>Praesent vestibum molestie lacus.<br>Aeonummy hendreriuris.<br>Phasellus porta.</p>
                 <a class="button1" href="#">More</a>
             </div>
         </div>
@@ -163,9 +184,9 @@
                 <div class="block_num">
                     <p>02</p>
                 </div>
-                <h4>performance</h4>
+                <h4>Performance</h4>
                 <h5>Vestibulum libero <br>nisl porta </h5>
-                <p>Praesent vestibum molestie lacus. <br>Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi. </p>
+                <p>Praesent vestibum molestie lacus.<br>Aeonummy hendreriuris.<br>Phasellus porta.</p>
                 <a class="button1" href="#">More</a>
             </div>
         </div>
@@ -174,9 +195,9 @@
                 <div class="block_num">
                     <p>03</p>
                 </div>
-                <h4>technology</h4>
+                <h4>Technology</h4>
                 <h5>Donec eget tellus non <br>erat lacinia f</h5>
-                <p>Praesent vestibum molestie lacus. <br>Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi. </p>
+                <p>Praesent vestibum molestie lacus.<br>Aeonummy hendreriuris.<br>Phasellus porta.</p>
                 <a class="button1" href="#">More</a>
             </div>
         </div>
@@ -184,6 +205,7 @@
             <hr>
         </div>
     </div>
+
     <div class="container_12">
         <div class="grid_12">
             <div class="block_2">
@@ -197,6 +219,7 @@
             <hr class="marg_2">
         </div>
     </div>
+
     <div class="container_12">
         <div class="grid_6">
             <div class="block_3">
@@ -207,8 +230,8 @@
                     <div class="block_letter">
                         <p>a</p>
                     </div>
-                    <h5>Vestibulum libero<br>nisl porta </h5>
-                    <p>Praesent vestibum molestie lacus. <br>Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi.</p>
+                    <h5>Vestibulum libero<br>nisl porta</h5>
+                    <p>Praesent vestibum molestie lacus. Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi.</p>
                     <a class="button1" href="#">More</a>
                 </div>
             </div>
@@ -223,14 +246,15 @@
                         <p>b</p>
                     </div>
                     <h5>Donec eget tellus non <br>erat lacinia f</h5>
-                    <p>Praesent vestibum molestie lacus. <br>Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi.</p>
+                    <p>Praesent vestibum molestie lacus. Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi.</p>
                     <a class="button1" href="#">More</a>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="container_12 marg_3">
-         <div class="grid_6">
+        <div class="grid_6">
             <div class="block_3">
                 <div class="icon">
                     <div class="fa-wrench"></div>
@@ -240,12 +264,12 @@
                         <p>c</p>
                     </div>
                     <h5>Donec eget tellus non <br>erat lacinia f</h5>
-                    <p>Praesent vestibum molestie lacus. <br>Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi.</p>
+                    <p>Praesent vestibum molestie lacus. Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi.</p>
                     <a class="button1" href="#">More</a>
                 </div>
             </div>
         </div>
-         <div class="grid_6">
+        <div class="grid_6">
             <div class="block_3">
                 <div class="icon">
                     <div class="fa-shopping-cart"></div>
@@ -254,36 +278,55 @@
                     <div class="block_letter">
                         <p>d</p>
                     </div>
-                    <h5>Vestibulum libero<br>nisl porta </h5>
-                    <p>Praesent vestibum molestie lacus. <br>Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi.</p>
+                    <h5>Vestibulum libero<br>nisl porta</h5>
+                    <p>Praesent vestibum molestie lacus. Aeonummy hendreriuris. Phasellus <br>porta. Fusce susipit varius mi.</p>
                     <a class="button1" href="#">More</a>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="container_12">
         <div class="grid_12">
             <hr class="marg_4">
         </div>
     </div>
+
     <div class="container_12">
         <div class="grid_12">
             <h3 class="marg_5 corr_01">Where we work</h3>
         </div>
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-b7fd09c1-7d8d-4061-a566-d33eb3e28175" data-elfsight-app-lazy></div>
+
+        <!-- Replace Elfsight app with custom logo carousel -->
+        <div class="grid_12">
+            <div class="carousel-wrapper">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="images/logo1.png" alt="Logo 1">
+                        <img src="images/logo2.png" alt="Logo 2">
+                        <img src="images/logo3.png" alt="Logo 3">
+                        <img src="images/logo4.png" alt="Logo 4">
+                        <img src="images/logo5.png" alt="Logo 5">
+                        <img src="images/logo1.png" alt="Logo 1"> <!-- Repeat the logos for a seamless scroll -->
+                        <img src="images/logo2.png" alt="Logo 2">
+                        <img src="images/logo3.png" alt="Logo 3">
+                        <img src="images/logo4.png" alt="Logo 4">
+                        <img src="images/logo5.png" alt="Logo 5">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
 <!--=======footer=================================-->
 <footer>
     <div class="container_12">
         <div class="wrapper">
             <div class="grid_12">
-                <div class="top_arr">
-                </div>
+                <div class="top_arr"></div>
             </div>
-             <div class="clearfix"></div>
+            <div class="clearfix"></div>
             <div class="grid_12">
                 <form id="subscribe-form">
                     <div class="success">Your subscription request<br> has been sent!</div>
@@ -291,7 +334,7 @@
                         <label class="email">
                             <input type="email" value="NEWSLETTER SIGNUP">
                             <span class="error">*This is not a valid email address.</span></label>
-                        <div class="btns"><a href="#" class="button2 animate" data-type="submit">signup</a></div>
+                        <div class="btns"><a href="#" class="button2 animate" data-type="submit">Signup</a></div>
                     </fieldset>
                 </form>
             </div>
@@ -302,18 +345,20 @@
             <div class="clearfix"></div>
             <div class="grid_12 marg_7">
                 <div class="grid_3 prefix_3 alpha f_left">
-                    <p class="pad_1">7000 N Hwy 87,<br>
-                    Orange, Texas 77632</p>
+                    <p class="pad_1">7000 N Hwy 87,<br> Orange, Texas 77632</p>
                 </div>
                 <div class="grid_3 suffix_3 omega f_left">
-                    <p class="pad_2"><span class="width_1">Telephone:</span>  +1 409 883 7428<br>
-                    <span class="width_2">Email:</span>            bids@cypressbayouind.com</p>
+                    <p class="pad_2"><span class="width_1">Telephone:</span> +1 409 883 7428<br>
+                        <span class="width_2">Email:</span> bids@cypressbayouind.com
+                    </p>
                 </div>
             </div>
             <div class="clearfix"></div>
             <div class="grid_12">
-                    <p class="copyright"><span>CYPRESS BAYOU INDUSTRIAL, LLC</span> &bull; &copy; 2024<br><a href="index-5.html" class="link_2 animate">Privacy Policy</a></p>
-                    <div><!--{%FOOTER_LINK} --></div>
+                <p class="copyright"><span>CYPRESS BAYOU INDUSTRIAL, LLC</span> &bull; &copy; 2024<br>
+                    <a href="index-5.html" class="link_2 animate">Privacy Policy</a>
+                </p>
+                <div><!--{%FOOTER_LINK} --></div>
                 <div class="clearfix"></div>
             </div>
         </div>

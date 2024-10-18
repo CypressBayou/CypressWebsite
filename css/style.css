@@ -927,10 +927,7 @@ footer .width_2{
 .carousel {
 	display: flex;
 	align-items: center;
-	/* Adjust the animation duration to make it smooth and constant */
-	animation: scroll infinite linear;
-	/* Start with a larger negative value to maintain continuous flow */
-	transform: translateX(0);
+	animation: scroll 30s linear infinite; /* Longer duration for smooth, steady scroll */
 }
 
 .carousel img {
@@ -945,7 +942,7 @@ footer .width_2{
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(calc(-125px * 10)); /* Modify this based on the number of images */
+		transform: translateX(calc(-125px * 21)); /* Adjust this to the total width of all images */
 	}
 }
 
@@ -955,12 +952,13 @@ footer .width_2{
 		width: 100px;
 		height: 100px;
 	}
+
 	@keyframes scroll {
 		0% {
 			transform: translateX(0);
 		}
 		100% {
-			transform: translateX(calc(-100px * 10)); /* Adjust based on the number of images */
+			transform: translateX(calc(-100px * 21)); /* Adjust this based on the number of images */
 		}
 	}
 }
@@ -970,13 +968,15 @@ footer .width_2{
 		width: 80px;
 		height: 80px;
 	}
+
 	@keyframes scroll {
 		0% {
 			transform: translateX(0);
 		}
 		100% {
-			transform: translateX(calc(-80px * 10)); /* Adjust based on the number of images */
+			transform: translateX(calc(-80px * 21)); /* Adjust this based on the number of images */
 		}
 	}
 }
+
 

@@ -931,10 +931,12 @@ footer .width_2{
 }
 
 .carousel img {
-	width: 125px;
-	height: 125px;
-	object-fit: contain;
-	margin: 0 20px;
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    margin: 0 20px;
+    filter: grayscale(100%) brightness(50%); /* Makes logos gray and adjusts brightness */
+    opacity: 0.7; /* Optional: Slight transparency for medium gray effect */
 }
 
 @keyframes scroll {

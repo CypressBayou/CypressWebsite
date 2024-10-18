@@ -305,7 +305,6 @@
                         <img src="images/Airgas.png" alt="Logo 1">
                         <img src="images/Cemex_logo.png" alt="Logo 2">
                         <img src="images/arlanxeo.png" alt="Logo 3">
-                        <img src="images/advancion.png" alt="Logo 4">
                         <img src="images/airliquide.png" alt="Logo 5">
                         <img src="images/chemtrade_logo.png" alt="Logo 6">
                         <img src="images/Chevron_logo.png" alt="Logo 7">
@@ -326,7 +325,6 @@
                         <img src="images/Airgas.png" alt="Logo 1"> <!-- Repeat the logos for a seamless scroll -->
                         <img src="images/Cemex_logo.png" alt="Logo 2">
                         <img src="images/arlanxeo.png" alt="Logo 3">
-                        <img src="images/advancion.png" alt="Logo 4">
                         <img src="images/airliquide.png" alt="Logo 5">
                         <img src="images/chemtrade_logo.png" alt="Logo 6">
                         <img src="images/Chevron_logo.png" alt="Logo 7">
@@ -351,7 +349,7 @@
     </div>
 </section>
 
-<!-- Add JavaScript to shuffle the logos before the closing body tag -->
+<!-- Add JavaScript to shuffle the logos -->
 <script>
     // Function to shuffle an array (Fisher-Yates algorithm)
     function shuffleArray(array) {
@@ -373,10 +371,12 @@
         // Clear the carousel and append logos in shuffled order
         carousel.innerHTML = '';
         shuffledLogos.forEach(logo => carousel.appendChild(logo));
+
+        console.log("Logos shuffled!");  // Add a log to confirm it worked
     }
 
-    // Shuffle logos when the page loads
-    window.onload = shuffleLogos;
+    // Use DOMContentLoaded to make sure the DOM is ready before running the script
+    document.addEventListener("DOMContentLoaded", shuffleLogos);
 </script>
 
 <!--=======footer=================================-->

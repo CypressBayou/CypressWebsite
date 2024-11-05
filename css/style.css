@@ -205,12 +205,12 @@ header {
 }
 .button1:hover {
 	text-decoration:none;
-	color: #fff;
+	color: #8b8b8b;
 	background: #2c2c2c;
 }
 .button2 {
 	font: 700 22px/22px 'Orbitron', sans-serif;
-    color: #fff;
+    color: #8b8b8b;
     display: inline-block;
     position: relative;
     text-transform: uppercase;
@@ -252,7 +252,7 @@ hr {
 	width: 58px;
 	font: 700 31px/42px 'Orbitron', sans-serif;
 	text-align: center;
-	color: #4c4b4b;
+	color: #ffffff;
 	border-bottom: 3px solid #0f6936;
 	margin-bottom: 44px;
 }

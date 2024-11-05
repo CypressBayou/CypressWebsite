@@ -12,7 +12,7 @@
 @import url(//fonts.googleapis.com/css?family=Orbitron:700);
 @import url(//fonts.googleapis.com/css?family=PT+Sans);
 body{
-	background: #1f1f1f;
+	background: #ffffff;
 	font: 12px/19px 'Open Sans', sans-serif;
 	letter-spacing: 1px;
 	color: #7e7e7e;
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 0;
 	font-weight: normal;
 	text-transform: uppercase; 
-	color: #fff;
+	color: #444444;
 }
 h2{
 	font-size: 60px;
@@ -152,7 +152,7 @@ header {
 	width:100%;
 	position:relative; 
 	z-index:2;
-	background: #1a1a1a;
+	background: #ffffff;
 	border-bottom: 1px solid #2e2e2e;
 }
 .slider_box{
@@ -354,14 +354,14 @@ hr {
 	margin-bottom: 15px;
 }
 .link_1{
-	color: #fff;
+	color: #444444;
 	text-decoration: none;
 }
 .link_1:hover{
 	color: #0f6936;
 }
 .link_2{
-	color: #fff;
+	color: #444444;
 	text-decoration: none;
 }
 .link_2:hover{
@@ -509,7 +509,7 @@ hr {
     margin: 0 22px 0 0;
     float: left;
     text-transform: uppercase;
-    color: #fff;
+    color: #444444;
     text-align: center;
 }
 .list-blog li .badge span {
@@ -648,7 +648,7 @@ hr {
 }
 #form .error, #form .empty {
 	font-family: 'Open Sans', sans-serif;
-	color: #fff;
+	color: #444444;
 	display: none;
 	font-size: 10px;
 	line-height:14px;
@@ -716,7 +716,7 @@ footer {
 	letter-spacing: 0;
 	text-transform: uppercase;
 	display: block;
-	color: #fff;
+	color: #444444;
 	padding: 84px 0 49px;
 	text-align: center;
 }

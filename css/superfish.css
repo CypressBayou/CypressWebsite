@@ -38,7 +38,7 @@ nav {
 .sf-menu > li.current>a,
 .sf-menu > li.sfHover>a {
 	font: bold 14px/14px 'Open Sans', sans-serif;
-	color:#fff;
+	color:#3f3f3f;
 	text-decoration:none;
 	border-top: 3px solid #0f6936;
 	background: url('../images/arr_1.png') 50% 0 no-repeat;
@@ -66,7 +66,7 @@ nav {
 	margin: 0;
 	font: bold 14px/14px 'Open Sans', sans-serif;
 	text-transform:uppercase;
-	color: #fff;
+	color: #3b3b3b;
 }
 .sf-menu li:hover {
 	visibility: inherit; /* fixes IE7 'sticky bug' */
